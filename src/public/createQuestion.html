@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Create or Edit Question</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Create or Edit a Question</h1>
+  <!-- Form for creating or editing a question -->
+  <form id="editQuestionForm">
+    <label for="title">Question Title:</label>
+    <input type="text" id="title" name="title" required />
+    <br /><br />
+
+    <label for="categorySelect">Select Category:</label>
+    <select id="categorySelect" name="categoryId" required>
+      <option value="">-- Select Category --</option>
+      <!-- Categories populated dynamically -->
+    </select>
+    <br /><br />
+
+    <h3>Answers</h3>
+    <!-- Container for answer fields -->
+    <div id="answersContainer">
+      <!-- Dynamic answer fields will be appended here -->
+    </div>
+    <br />
+    <!-- Button to add a new answer field -->
+    <button type="button" id="addAnswerBtn">Add Answer</button>
+    <br /><br />
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <hr />
+
+  <!-- Form for creating a new category -->
+  <h2>Create a New Category</h2>
+  <form id="categoryForm">
+    <label for="catName">Category Name:</label>
+    <input type="text" id="catName" name="name" required />
+    <br /><br />
+    <button type="submit">Create Category</button>
+  </form>
+
+  <script src="/createQuestion.js"></script>
+</body>
+</html>

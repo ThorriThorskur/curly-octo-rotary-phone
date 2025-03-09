@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Edit Question</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Edit Question</h1>
+  <form id="editQuestionForm">
+    <label for="title">Question Title:</label>
+    <input type="text" id="title" name="title" required>
+    <br><br>
+    
+    <label for="categorySelect">Select Category:</label>
+    <select id="categorySelect" name="categoryId" required>
+      <option value="">-- Select Category --</option>
+      <!-- Categories will be loaded dynamically -->
+    </select>
+    <br><br>
+    
+    <h3>Answers</h3>
+    <div id="answersContainer">
+      <!-- Answer fields load dynamically -->
+    </div>
+    <button type="button" id="addAnswerBtn">Add Answer</button>
+    <br><br>
+    
+    <button type="submit">Update Question</button>
+  </form>
+  <script src="/editQuestion.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+#categories li {
+    margin-bottom: 10px;
+  }
+  
+  #categories li button {
+    margin-left: 5px;
+  }
+
+  :root {
+    --font-base-size: 16px;
+    --font-base-family: system-ui, helvetica, arial, sans-serif;
+    --max-inline-size: 50rem;
+    --spacing: 1rem;
+    --color-correct: #bffbbf;
+    --color-incorrect: #fdbcb5;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    /* Center the page content with a max width */
+    margin: 0 auto;
+    max-width: var(--max-inline-size);
+    padding: var(--spacing);
+    font-family: var(--font-base-family);
+    font-size: var(--font-base-size);
+    line-height: 1.4;
+    background-color: #fff; /* Adjust as desired */
+    color: #000;           /* Adjust as desired */
+  }
+  
+  /* Headings, paragraphs, and other block-level elements */
+  h1, h2, p {
+    margin-bottom: var(--spacing);
+  }
+  
+  /* Lists */
+  ul {
+    list-style: disc;
+    margin-left: 1.5rem;
+    margin-bottom: var(--spacing);
+  }
+  
+  li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Buttons */
+  button {
+    margin-left: 0.5rem;
+    cursor: pointer;
+  }
+  
+  /* Example styling for .answer items in your questions */
+  .answer {
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+    padding: 0.25rem;
+  }
+  
+  .answer--correct {
+    background-color: var(--color-correct);
+  }
+  
+  .answer--incorrect {
+    background-color: var(--color-incorrect);
+  }
+  .answer-radio {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.25rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Style the radio input if needed */
+  .answer-radio input[type="radio"] {
+    margin-right: 0.5rem;
+  }
+  
+  /* Classes to be applied when an answer is selected */
+  .answer--selected-correct {
+    background-color: var(--color-correct);
+  }
+  
+  .answer--selected-incorrect {
+    background-color: var(--color-incorrect);
+  }
